@@ -1,13 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(
-React.createElement("button", {label: "enviar"}, "clique aqui para enviar")
-, document.getElementById('root'));
+function sendButton () {
+    console.log('enviando dados...');
+}
+
+function App (props) {
+    return (
+        <button onClick={props.onClickButton}>{props.label}</button>
+    );
+}
+
+ReactDOM.render(<App label="Enviar" onClickButton={sendButton}/>, document.getElementById('root'));
 /*
- * primeiro parametro o App Principal
- * pode-se usa-lo para fazer a chamada de outros componentes que vão formar o layout final
- * o segundo parametro é onde ele irá renderizar no index.html se você procurar lá terá uma div com:
- * <div id="root"></div>
- * document.getElementById('root') esperamos que saiba como funciona.
+ * também podemos passar o JSX via função e usar ela como se fosse um componente
+ * também podemos usar props desse modo
+ * também podemos usar chamada de ação 
  */
