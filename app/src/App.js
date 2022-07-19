@@ -33,27 +33,30 @@ export default function App(props) {
   };
 
   return (
-    <>
+    <React.Fragment>
       {title && <h1>{title}</h1>}
-      {/*se title existir mostre isso é uma rederização condicional*/}
       <h3>Treinamentos</h3>
-      <p>Aluno Hcode tem que ser especialista.</p>
-      <Button
-        label="Cambiar titulo"
-        onClickButton={() => handleClick("Tambien estoy aprendiendo español")}
+      <p>
+        testes de aprendizagem com react pois aluno hcode tem que ser
+        especialista
+      </p>
+      <Button 
+        onClickButton={() => handleClick('novo titulo')}
+        label="trocar titulo"
       />
-      <br />
-      <br />
-      <Button label="Chamar Api" onClickButton={sendAPI} />
-      <br />
-      <br />
-      <Button label="Login" onClickButton={login} />
-      <Button label="Cadastre-se" onClickButton={register} />
-      {/*
-       * passar parâmetros para um função hendle é simples:
-       * primeiro nesse caso na função handle adiciona o parâmento a função por exemplo (text)
-       * segundo passo na chamada para a ação do react crie uma arrow function coloque a função handle e passe o valor do parâmetro.
-       */}
-    </>
+      <Button 
+        label="Conectar com RestAPI"
+        onClickButton={sendAPI}
+        />
+      <Button 
+        label="Cadastrar usuário"
+        onClickButton={register}
+       />
+      <Button 
+        label="Logar usuário"
+        onClickButton={login}
+       />
+     
+    </React.Fragment>
   );
 }
