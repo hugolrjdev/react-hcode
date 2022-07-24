@@ -1,11 +1,11 @@
 import React from "react";
 
-export const ProgressPlayerMusic = () => {
+export const ProgressPlayerMusic = (props) => {
   return (
     <div className="progress-midia">
       <div className="tempo-da-musica">0:18</div>
       <div className="progress-bar">
-        <progress id="file" value="18" max="100">
+        <progress id="file" value={props.progress} max="100">
           18%
         </progress>
       </div>

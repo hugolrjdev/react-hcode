@@ -1,0 +1,30 @@
+.player {
+  display: flex;
+  background-color: #181818;
+  border: 1px solid #282828;
+  height: 100px;
+  color: #f8f8f8;
+}
+
+.player img {
+  width: 50px;
+}
+.player div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player button {
+    background: none;
+    border: none;
+}
+
+.player svg {
+  fill: #f8f8f8;
+}
+
+.player .controls {
+  width: 60%;
+  flex-direction: column;
+}
