@@ -65,6 +65,22 @@ export const Play = () => {
   );
 };
 
+export const Pause = () => {
+  return (
+    <button>
+      <svg
+        role="img"
+        height="16"
+        width="16"
+        viewBox="0 0 16 16"
+        className="Svg-sc-1bi12j5-0 EQkJl"
+      >
+        <path d="M2.7 1a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7H2.7zm8 0a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-2.6z"></path>
+      </svg>
+    </button>
+  );
+};
+
 export const NextMusic = () => {
   return (
     <button>
@@ -128,31 +144,5 @@ export const DivicesForPlay = () => {
         <path d="M13 10a2 2 0 11-4 0 2 2 0 014 0zm-1-5a1 1 0 11-2 0 1 1 0 012 0z"></path>
       </svg>
     </button>
-  );
-};
-
-export const Volume = () => {
-  return (
-    <div className="options-control__volume">
-      <div className="options-control__volume-icon">
-        <svg
-          role="presentation"
-          height="16"
-          width="16"
-          aria-label="Volume alto"
-          id="volume-icon"
-          viewBox="0 0 16 16"
-          className="Svg-sc-1bi12j5-0 EQkJl"
-        >
-          <path d="M9.741.85a.75.75 0 01.375.65v13a.75.75 0 01-1.125.65l-6.925-4a3.642 3.642 0 01-1.33-4.967 3.639 3.639 0 011.33-1.332l6.925-4a.75.75 0 01.75 0zm-6.924 5.3a2.139 2.139 0 000 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 010 4.88z"></path>
-          <path d="M11.5 13.614a5.752 5.752 0 000-11.228v1.55a4.252 4.252 0 010 8.127v1.55z"></path>
-        </svg>
-      </div>
-      <div className="options-control__volume-progress">
-        <progress id="file" value="18" max="100">
-          18%
-        </progress>
-      </div>
-    </div>
   );
 };

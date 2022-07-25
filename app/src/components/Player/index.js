@@ -5,19 +5,16 @@ import {
   RandomMusic,
   BackMusic,
   Play,
+  Pause,
   NextMusic,
   RepeatMusic,
-  ProgressPlayerMusic,
   QueueMusic,
   DivicesForPlay,
-  Volume,
-} from "../Ultils/Icons"; // como o favorite não foi exportado com default tem que ser chamado obrigatoriamente por desconstrução
+} from "../Ultils/Icons";
+import { ProgressPlayerMusic } from "../ProgressPlayerMusic";
+import { Volume } from "../Volume";
+import "./Player.css";
 
-import "./style.css";
-
-/**
- * criar elementos restantes pode usar input progress como exemplo
- */
 export default function Player() {
   return (
     <div className="player">
@@ -47,7 +44,7 @@ export default function Player() {
             <RepeatMusic />
           </div>
         </div>
-        <ProgressPlayerMusic />
+        <ProgressPlayerMusic progress="18" />
       </div>
       <div className="options-control">
         <div className="options-control__fila-de-musicas">

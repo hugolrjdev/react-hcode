@@ -1,0 +1,13 @@
+.options-control__volume-progress div.progress-bar {
+  width: 100px;
+  height: 4px;
+  background-color: #ffffff4d;
+  border-radius: 10px;
+  justify-content: flex-start;
+}
+
+.progress-bar div.progress-bar__bar {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+}
