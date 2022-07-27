@@ -1,4 +1,5 @@
 import React from "react";
+import "./Icons.css";
 
 export const Favorite = () => {
   return (
@@ -143,6 +144,111 @@ export const DivicesForPlay = () => {
         <path d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0114.25 15h-6.5A1.75 1.75 0 016 13.25V2.75zm1.75-.25a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 00.25-.25V2.75a.25.25 0 00-.25-.25h-6.5zm-6 0a.25.25 0 00-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 010 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z"></path>
         <path d="M13 10a2 2 0 11-4 0 2 2 0 014 0zm-1-5a1 1 0 11-2 0 1 1 0 012 0z"></path>
       </svg>
+    </button>
+  );
+};
+
+export const Home = () => {
+  return (
+    <a href="#" className="sideFlex iconMenu">
+      <svg
+        role="img"
+        height="24"
+        width="24"
+        class="Svg-ytk21e-0 jAKAlG home-active-icon"
+        viewBox="0 0 24 24"
+      >
+        <path d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"></path>
+      </svg>
+      <span>Início</span>
+    </a>
+  );
+};
+
+export const Search = () => {
+  return (
+    <a href="#" className="sideFlex iconMenu">
+      <svg
+        role="img"
+        height="24"
+        width="24"
+        class="Svg-ytk21e-0 jAKAlG search-icon"
+        viewBox="0 0 24 24"
+      >
+        <path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path>
+      </svg>
+      <span>Buscar</span>
+    </a>
+  );
+};
+
+export const YLibrary = () => {
+  return (
+    <a href="#" className="sideFlex iconMenu">
+      <svg
+        role="img"
+        height="24"
+        width="24"
+        class="Svg-ytk21e-0 jAKAlG collection-icon"
+        viewBox="0 0 24 24"
+      >
+        <path d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path>
+      </svg>
+      <span>Sua Biblioteca</span>
+    </a>
+  );
+};
+
+export const CreatePlayList = () => {
+  return (
+    <button className="sideFlex iconMenu">
+      <svg
+        role="img"
+        height="12"
+        width="12"
+        aria-hidden="true"
+        viewBox="0 0 16 16"
+        class="Svg-ytk21e-0 jAKAlG"
+      >
+        <path d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z"></path>
+      </svg>
+      <span>Criar Playlist</span>
+    </button>
+  );
+};
+
+export const MusicLikes = () => {
+  return (
+    <button className="sideFlex iconMenu">
+      <svg
+        role="img"
+        height="12"
+        width="12"
+        aria-hidden="true"
+        viewBox="0 0 16 16"
+        class="Svg-ytk21e-0 jAKAlG"
+      >
+        <path d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path>
+      </svg>
+      <span>Músicas Curtidas</span>
+    </button>
+  );
+};
+
+export const YChapters = () => {
+  return (
+    <button className="sideFlex iconMenu">
+      <svg
+        role="img"
+        height="12"
+        width="12"
+        aria-hidden="true"
+        viewBox="0 0 16 16"
+        class="Svg-ytk21e-0 jAKAlG"
+      >
+        <path d="M3.75 0A1.75 1.75 0 002 1.75v12.952c0 1.051 1.22 1.633 2.037.972l3.962-3.208 3.943 3.204c.817.663 2.038.082 2.038-.97V1.75A1.75 1.75 0 0012.23 0H3.75z"></path>
+      </svg>
+      <span>Seus Episódios</span>
     </button>
   );
 };

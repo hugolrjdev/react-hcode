@@ -1,4 +1,9 @@
 import React from "react";
+import { Logo } from "../Ultils/Logo";
+import MenuSearchLibrary from "../MenuSearchLibrary";
+import PlaylistAndOrganize from "../PlayListAndOrganize";
+
+import "./MainMenu.css";
 
 const playlists = [
   "Metal",
@@ -8,6 +13,15 @@ const playlists = [
   "Elegant Affer",
   "Rock",
   "Metal en Espanhol",
+  "The beast Metallica",
+  "The beast Iron Maider",
+  "The beast Dream Evil",
+  "The beast João Gomes",
+  "The beast Tarcisio do Acordeon",
+  "The beast Arenia",
+  "The beast Maneskin",
+  "The beast Desturbed",
+  "The beast System of Donw",
 ];
 
 export default class MainMenu extends React.Component {
@@ -20,7 +34,13 @@ export default class MainMenu extends React.Component {
     this.setState({ language: "en" });
     return (
       <div className="mainMenu">
-        <div className="icons"></div>
+        <div className="logo">
+          <Logo />
+        </div>
+        <div className="icons">
+          <MenuSearchLibrary />
+          <PlaylistAndOrganize />
+        </div>
         <div className="playlists">
           <ul>
             {playlists.map((playlist, index) => (

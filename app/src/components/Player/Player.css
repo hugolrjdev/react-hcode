@@ -36,11 +36,11 @@
 }
 
 .player .album {
-  width: 11%;
+  width: 15%;
 }
 
 .player .controls {
-  width: 75%;
+  width: 70%;
   flex-direction: column;
 }
 
