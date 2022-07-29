@@ -212,7 +212,7 @@ export const CreatePlayList = () => {
       >
         <path d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z"></path>
       </svg>
-      <span>Criar Playlist</span>
+      <span>Criar playlist</span>
     </button>
   );
 };
@@ -248,7 +248,7 @@ export const YChapters = () => {
       >
         <path d="M3.75 0A1.75 1.75 0 002 1.75v12.952c0 1.051 1.22 1.633 2.037.972l3.962-3.208 3.943 3.204c.817.663 2.038.082 2.038-.97V1.75A1.75 1.75 0 0012.23 0H3.75z"></path>
       </svg>
-      <span>Seus Episódios</span>
+      <span>Seus episódios</span>
     </button>
   );
 };

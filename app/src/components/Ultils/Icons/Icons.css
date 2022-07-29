@@ -9,6 +9,10 @@
   padding: 0 16px;
 }
 
+.sideFlex span {
+  letter-spacing: 0.5px;
+}
+
 .iconMenu {
   color: #fff;
   background: none;
