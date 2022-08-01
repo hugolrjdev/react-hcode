@@ -1,7 +1,6 @@
 import React from "react";
 import { Logo } from "../Ultils/Logo";
 import MenuSearchLibrary from "../MenuSearchLibrary";
-import PlaylistAndOrganize from "../PlayListAndOrganize";
 
 import "./MainMenu.css";
 
@@ -39,7 +38,6 @@ export default class MainMenu extends React.Component {
         </div>
         <div className="icons">
           <MenuSearchLibrary />
-          <PlaylistAndOrganize />
         </div>
         <div className="playlists">
           <ul>
