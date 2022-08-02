@@ -52,9 +52,32 @@
   width: 130px;
 }
 
+.mainMenu ul li:nth-child(4) a svg,
+.mainMenu ul li:nth-child(5) a svg,
+.mainMenu ul li:nth-child(6) a svg {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.mainMenu ul li:nth-child(4) a svg {
+  background-color: #e4e4e4;
+  fill: #111;
+}
+
+.mainMenu ul li:nth-child(5) a svg {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+}
+
+.mainMenu ul li:nth-child(6) a svg {
+  background: #006450;
+  fill: #1ed760;
+}
+
 .mainMenu .playlists {
   width: calc(100% - 25px);
-  height: 12vh;
+  height: 40vh;
   border-top: 0.5px solid #3e3e3e;
   overflow-y: scroll;
   position: absolute;

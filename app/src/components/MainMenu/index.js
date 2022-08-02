@@ -26,9 +26,24 @@ const playlists = [
 export default class MainMenu extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { language: "pt-br" };
+    this.state = { language: "pt-br", welcome: "Bem-vindo ao Spotify" };
     this.handleNewPlayList = this.handleNewPlayList.bind(this);
+    this.handleUpdateTitle = this.handleUpdateTitle.bind(this);
+    this.componentDidMount();
   }
+
+  componentDidMount() {
+    document.title = `Spotify - ${this.state.welcome}`;
+  }
+
+  componentDidUpdate() {
+    document.title = `Alterou Spotify - ${this.state.welcome}`;
+  }
+
+  componentAMount() {
+    document.title = `Desmontou Spotify - ${this.state.welcome}`;
+  }
+
   render() {
     this.setState({ language: "en" });
     return (
@@ -50,12 +65,17 @@ export default class MainMenu extends React.Component {
             ))}
           </ul>
         </div>
-        <button onClick={this.handleNewPlayList}>Nova PlayList</button>
+        <button onClick={this.handleUpdateTitle}>Nova PlayList</button>
       </div>
     );
   }
 
   handleNewPlayList(e) {
     alert("adicionando nova PlayList");
+  }
+
+  handleUpdateTitle(e) {
+    this.setState({ welcome: "Alterando por Exemplo" });
+    console.log("alterando");
   }
 }
