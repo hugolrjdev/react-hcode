@@ -50,9 +50,9 @@ export const BackMusic = () => {
   );
 };
 
-export const Play = () => {
+export const Play = (props) => {
   return (
-    <button>
+    <button onClick={props.eventClick}>
       <svg
         role="img"
         height="16"

@@ -7,7 +7,7 @@ export default function App(props) {
   return (
     <div className="App">
       <MainMenu />
-      <Player />
+      <Player music="Dragon Slayer" />
     </div>
   );
 }
