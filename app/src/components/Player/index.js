@@ -24,7 +24,7 @@ export default function Player(props) {
 
   useEffect(() => {
     //execultando pela primeira vez
-    document.title = `Tocando - ${music.title}`;
+    document.title = `Tocando - ${music}`;
     //sempre que existir uma alteração de estado ele é execultado novamente.
     console.log(`execultou ${count}x`);
   });

@@ -3,7 +3,7 @@ import React from "react";
 export const Logo = () => {
   return (
     <a href="#">
-      <svg viewBox="0 0 1134 340" class="spotify-logo--text">
+      <svg viewBox="0 0 1134 340" className="spotify-logo--text">
         <title>Spotify</title>
         <path
           fill="currentColor"
