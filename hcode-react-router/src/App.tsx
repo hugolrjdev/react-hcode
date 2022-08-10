@@ -23,6 +23,14 @@ function App() {
           </ul>
         </nav>
       </header>
+
+      <section id="hero">
+        <div className="hero-container">
+          <h2 className="hero-title">Bem Vindo a vida</h2>
+          <h3 className="hero-subtitle">modelo 768T</h3>
+        </div>
+      </section>
+
       <footer>
         <div className="content">
           <div className="copyright">
