@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "./assets/images/logo-porsche.png";
 import "./App.scss";
 
@@ -12,13 +13,13 @@ function App() {
         <nav className="menu">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/home"> Home </Link>
             </li>
             <li>
-              <a href="#">Models</a>
+              <Link to="/models"> Models </Link>
             </li>
             <li>
-              <a href="#">Descubra</a>
+              <Link to="/discover"> Descubra </Link>
             </li>
           </ul>
         </nav>
