@@ -1,0 +1,50 @@
+section#models-section {
+  margin: 25px 0;
+  h2 {
+    padding: 0 7%;
+    margin-bottom: 25px;
+  }
+  .models {
+    display: grid;
+    grid-auto-rows: 220px;
+    grid-template-columns: repeat(2, 1fr);
+    .models__item {
+      &:nth-child(1) {
+        background-image: url("../../assets/images/porsche-718.webp");
+      }
+      &:nth-child(2) {
+        background-image: url("../../assets/images/porsche-991.webp");
+      }
+      &:nth-child(3) {
+        background-image: url("../../assets/images/porsche-cayenne.webp");
+      }
+      &:nth-child(4) {
+        background-image: url("../../assets/images/porsche-panarema.webp");
+      }
+      &:nth-child(5) {
+        background-image: url("../../assets/images/porsche-tycan.webp");
+      }
+      &:nth-child(6) {
+        background-image: url("../../assets/images/porsche-macan.webp");
+      }
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      h3 {
+        color: #fff;
+        margin-left: 10%;
+        font-size: 2em;
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  section#models-section {
+    .models {
+      grid-auto-rows: 500px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
