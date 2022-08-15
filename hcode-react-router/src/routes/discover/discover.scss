@@ -1,0 +1,30 @@
+section#discover {
+  margin: 0 7%;
+  .discover {
+    display: flex;
+    .discover__item {
+      cursor: pointer;
+      &:hover {
+        color: #f00;
+        transition: all ease-in 1s;
+        img {
+          border-bottom: 2px solid #f00;
+        }
+      }
+      img {
+        height: 285px;
+      }
+      h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        &::before {
+          content: ">";
+          font-weight: 900;
+          font-size: 20px;
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+}
