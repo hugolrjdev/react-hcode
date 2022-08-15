@@ -9,11 +9,15 @@ section#models-section {
     grid-auto-rows: 220px;
     grid-template-columns: repeat(2, 1fr);
     .models__item {
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
       &:nth-child(1) {
         background-image: url("../../assets/images/porsche-718.webp");
       }
       &:nth-child(2) {
-        background-image: url("../../assets/images/porsche-991.webp");
+        background-image: url("../../assets/images/porsche-911.webp");
       }
       &:nth-child(3) {
         background-image: url("../../assets/images/porsche-cayenne.webp");
@@ -27,9 +31,6 @@ section#models-section {
       &:nth-child(6) {
         background-image: url("../../assets/images/porsche-macan.webp");
       }
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50%;
       h3 {
         color: #fff;
         margin-left: 10%;

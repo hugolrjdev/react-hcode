@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Discover from "./routes/discover";
-
+import Model from "./routes/Model-single/Model";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -19,6 +19,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/models" element={<Models />} />
+        <Route path="/models/:modelId" element={<Model />} />
         <Route path="/discover" element={<Discover />} />
       </Routes>
       <Footer />
