@@ -10,7 +10,7 @@ const Models = () => {
     // console.log(`name:${target.dataset.photo}`);
     if (target.dataset.id) {
       navigate(
-        `/models/${target.dataset.id}?name=${target.dataset.name}&?photo=${target.dataset.photo}`
+        `/models/${target.dataset.id}?photo=${target.dataset.photo}&name=${target.dataset.name}`
       );
     }
     //redirecionar para models / o id
@@ -33,7 +33,7 @@ const Models = () => {
           className="models__item"
           data-id="2"
           data-name="911"
-          data-image="porsche-911.webp"
+          data-photo="porsche-911.webp"
           onClick={handleClick}
         >
           <h3>911</h3>
@@ -42,7 +42,7 @@ const Models = () => {
           className="models__item"
           data-id="3"
           data-name="Cayanne"
-          data-image="porsche-cayenne.webp"
+          data-photo="porsche-cayenne.webp"
           onClick={handleClick}
         >
           <h3>Cayanne</h3>
@@ -51,7 +51,7 @@ const Models = () => {
           className="models__item"
           data-id="4"
           data-name="Panamera"
-          data-image="porsche-panamera.webp"
+          data-photo="porsche-panarema.webp"
           onClick={handleClick}
         >
           <h3>Panamera</h3>
@@ -60,7 +60,7 @@ const Models = () => {
           className="models__item"
           data-id="5"
           data-name="Taycan"
-          data-image="porsche-tycan.webp"
+          data-photo="porsche-tycan.webp"
           onClick={handleClick}
         >
           <h3>Taycan</h3>
@@ -69,7 +69,7 @@ const Models = () => {
           className="models__item"
           data-id="6"
           data-name="Macan"
-          data-image="porsche-macan.webp"
+          data-photo="porsche-macan.webp"
           onClick={handleClick}
         >
           <h3>Macan</h3>
