@@ -9,6 +9,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Discover from "./routes/discover";
 import Model from "./routes/Model-single/Model";
+import NotFound from "./routes/not-found";
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -19,8 +21,11 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/models" element={<Models />} />
-        <Route path="/models/:modelId" element={<Model />} />
+        <Route path="/models/:modelId" element={<Model />} />{" "}
+        {/* passando o parametro de id */}
         <Route path="/discover" element={<Discover />} />
+        <Route path="*" element={<NotFound />} />
+        {/*sempre tem que ser a ultima rota*/}
       </Routes>
       <Footer />
     </BrowserRouter>

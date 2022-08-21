@@ -6,9 +6,9 @@ import "./header.scss";
 const Header = () => {
   return (
     <header className="App-header">
-      <a href="#" className="logo" aria-label="Logo">
+      <Link to="/" className="logo" ariaLabel="Logo">
         <img src={logo} alt="Logo da Porsche" />
-      </a>
+      </Link>
       <nav className="menu">
         <ul>
           <li>

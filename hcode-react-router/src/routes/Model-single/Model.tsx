@@ -3,8 +3,8 @@ import { useParams, useSearchParams } from "react-router-dom";
 import "./model.scss";
 
 const Model = () => {
-  const params = useParams();
-  const [query] = useSearchParams();
+  const params = useParams(); //ultilizando a barra na Url / -> Parâmetro
+  const [query] = useSearchParams(); // Ultilizando o ? -> Search params chamado de querie strings
   console.log("params aqui", params);
 
   const modelName = query.get("name");
