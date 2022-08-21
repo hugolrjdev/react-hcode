@@ -1,10 +1,11 @@
 import React from "react";
 import { useParams, useSearchParams } from "react-router-dom";
+import "./model.scss";
 
 const Model = () => {
   const params = useParams();
   const [query] = useSearchParams();
-  console.log(params);
+  console.log("params aqui", params);
 
   const modelName = query.get("name");
   const modelImage = query.get("photo");
@@ -13,10 +14,12 @@ const Model = () => {
     <section id="model">
       <h1>
         Modelo {modelName && modelName}{" "}
-        {params.modelId && `Id: ${params.modelId}`}
-        {`imagem ${modelImage} aqui`}
+        {params.modelId && `Id: ( ${params.modelId} )`}
       </h1>
-      <img src={require(`../../assets/images/${modelImage}`)} />
+      <img
+        src={require(`../../assets/images/${modelImage}`)}
+        alt={modelName! && modelName}
+      />
     </section>
   );
 };

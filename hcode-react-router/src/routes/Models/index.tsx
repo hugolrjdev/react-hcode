@@ -11,7 +11,7 @@ const Models = () => {
     if (target.dataset.id) {
       navigate(
         `/models/${target.dataset.id}?photo=${target.dataset.photo}&name=${target.dataset.name}`
-      );
+      ); //navigate informa a url que ele ira visitar via querie strigs
     }
     //redirecionar para models / o id
   };
